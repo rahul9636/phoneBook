@@ -1,0 +1,18 @@
+
+server:
+  applicationConnectors:
+    - type: http
+      port: 8080
+
+  adminConnectors:
+    - type: http
+      port: 8081
+
+database:
+  driverClass: com.mysql.jdbc.Driver
+  user: krishan
+  password: password1
+  url: jdbc:mysql://localhost:3306/blogData
+  properties:
+    charSet: UTF-8
+    hibernate.dialect: org.hibernate.dialect.MySQLDialect
